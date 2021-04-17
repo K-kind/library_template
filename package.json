@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "description": "template for making library with typescript",
   "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
   "scripts": {
     "build": "tsc",
     "prepublishOnly": "npm run build",
