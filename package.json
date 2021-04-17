@@ -3,6 +3,8 @@
   "version": "0.0.1",
   "description": "template for making library with typescript",
   "main": "lib/index.js",
+  "module": "lib/index.js",
+  "types": "lib/index.d.ts",
   "files": [
     "lib"
   ],
@@ -22,6 +24,9 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/K-kind/ts-library-template.git"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "devDependencies": {
     "@types/jest": "^26.0.22",
