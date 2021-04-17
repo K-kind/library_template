@@ -1,5 +1,5 @@
 {
-  "name": "library_template",
+  "name": "ts-library-template",
   "version": "0.0.1",
   "description": "template for making library with typescript",
   "main": "lib/index.js",
@@ -19,7 +19,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/K-kind/library_template.git"
+    "url": "git+https://github.com/K-kind/ts-library-template.git"
   },
   "devDependencies": {
     "@types/jest": "^26.0.22",
