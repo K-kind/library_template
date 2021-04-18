@@ -2,18 +2,17 @@
 const path = require('path')
 
 module.exports = {
-  entry: path.join(__dirname, 'src', 'index.ts'),
-  output: {
-    filename: 'index.js',
-    path: path.join(__dirname, 'lib'),
-    libraryTarget: 'umd'
+  entry: {
+    index: [path.join(__dirname, 'src', 'index.ts')]
   },
-  target: 'node',
+  output: {
+    filename: '[name].js',
+    path: path.join(__dirname, 'lib'),
+    libraryTarget: 'umd',
+    globalObject: 'this'
+  },
   resolve: {
-    extensions: ['.ts'],
-    alias: {
-      '~': path.resolve(__dirname, 'src')
-    }
+    extensions: ['.ts']
   },
   module: {
     rules: [
